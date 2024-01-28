@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy TV</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #222425;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 0.001em;
+            user-select: none;
+        }
+
+        section {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .button-container {
+            display: flex;
+            width: 300vw; /* Three buttons side by side */
+        }
+
+        .animated-button {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .button-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Initially grey with 0.5 opacity */
+            transition: opacity 0.3s;
+        }
+
+        .animated-button:hover .overlay {
+            opacity: 0.8; /* Fade out overlay on hover */
+        }
+
+        .button-text {
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+            letter-spacing: 1px; /* Add letter spacing for a modern look */
+            transition: color 0.3s; /* Smooth color transition on hover */
+            user-select: none;
+        }
+
+        .button-description {
+            color: #ecf0f1;
+            font-size: 1.2em;
+            margin-top: 10px;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* Adjust as needed */
+            text-align: center;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Legacy TV┃JOE 🎞️</h1>
+    </header>
+
+    <section>
+        <div class="button-container">
+            <a href="#live" class="animated-button">
+                <img src="https://i.ibb.co/SmGRm2g/f2129231c7e7493b9b26e55d54184ff6.jpg" alt="Live" class="button-image">
+                <div class="overlay"></div>
+                <span class="button-text">LIVE</span>
+                <p class="button-description">Watch live broadcasts anytime.</p>
+            </a>
+            <a href="#film" class="animated-button">
+                <img src="https://i.ibb.co/X5krZ6P/Bad-or-Rad-Netflix-s-New-Icon.jpg" alt="Films" class="button-image">
+                <div class="overlay"></div>
+                <span class="button-text">FILMS</span>
+                <p class="button-description">Explore a wide range of films.</p>
+            </a>
+            <a href="#series" class="animated-button">
+                <img src="https://i.ibb.co/NymbXLb/e7bb3a65-639e-4717-9481-8ac90d5f8aec.jpg" alt="Series" class="button-image">
+                <div class="overlay"></div>
+                <span class="button-text">SERIES</span>
+                <p class="button-description">Discover captivating TV series.</p>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
