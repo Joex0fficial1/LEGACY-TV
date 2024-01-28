@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegacyTV/Series</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #222425;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 0.001em;
+            user-select: none;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px;
+            height: 80vh; /* Set a fixed height for the section */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .image-button {
+            position: relative;
+            overflow: hidden;
+            margin: 2px;
+            width: 200px; /* Adjust the width as needed */
+            user-select: none;
+        }
+
+        .button-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            user-select: none;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: opacity 0.3s;
+        }
+
+        .image-button:hover .overlay {
+            opacity: 0.8;
+        }
+
+        .button-text {
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            font-size: 1.2em; /* Adjust the font size as needed */
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            letter-spacing: 0.5px;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Legacy TV┃Series 🎞️</h1>
+    </header>
+
+    <section>
+        <div class="image-button">
+            <img src="https://i.ibb.co/fQzJ211/Wild-long-tmp.jpg" alt="Button 1" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">المتوحش</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/qryNtgC/Akhar-long-tmp.jpg" alt="Button 2" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">شخص اخر</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/FBg8nVB/qat-IOh-THbo7x-Ipx5vzww-Ky-N2-Wwc.jpg" alt="Button 3" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">الغدار</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/2Yx7KsF/ates-kuslari.jpg" alt="Button 4" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">طيور النار</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/pXMq34N/Mutachared-tmp-Long.jpg" alt="Button 5" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">المتشرد</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/5TWmBdR/Khabeni-Long.jpg" alt="Button 6" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">خبئني</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/jVQRcwW/Yali-Capkini.jpg" alt="Button 7" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">الطائر الرفراف</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/2q7xrvY/baba.jpg" alt="Button 8" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">ابي</span>
+        </div>
+
+        <div class="image-button">
+            <img src="https://i.ibb.co/RbfFkrv/ng-Agk-Mr-VQy-Bhiuh-IK3zg1tmrav-S-354x520.jpg" alt="Button 9" class="button-image">
+            <div class="overlay"></div>
+            <span class="button-text">الياقوت</span>
+        </div>
+
+    </section>
+</body>
+</html>
